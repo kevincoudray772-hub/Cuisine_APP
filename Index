@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="apple-mobile-web-app-title" content="Recettes"/>
+  <title>Recettes Intelligentes</title>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="apple-touch-icon" href="icons/icon-192.png"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">
+    <!-- Contenu dynamique injecté par JS -->
+  </div>
+  <nav id="bottom-nav">
+    <button onclick="navigate('accueil')" id="nav-accueil" class="nav-btn active">
+      🏠<span>Accueil</span>
+    </button>
+    <button onclick="navigate('stock')" id="nav-stock" class="nav-btn">
+      🥦<span>Stock</span>
+    </button>
+    <button onclick="navigate('recettes')" id="nav-recettes" class="nav-btn">
+      🍳<span>Recettes</span>
+    </button>
+    <button onclick="navigate('courses')" id="nav-courses" class="nav-btn">
+      🛒<span>Courses</span>
+    </button>
+  </nav>
+  <script src="db.js"></script>
+  <script src="scanner.js"></script>
+  <script src="recettes-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
